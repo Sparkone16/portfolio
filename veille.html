@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Veille Technologique | Léandro VEYRENC-CORDERO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+    <meta name="description"
+        content="Suivi des innovations informatiques par Léandro VEYRENC-CORDERO. Analyses approfondies sur le Low-Code, le DevOps, le développement mobile et l'IA.">
+
+    <meta property="og:title" content="Ma Veille Technologique - Léandro V.C">
+    <meta property="og:description"
+        content="Découvrez ma sélection d'articles et mes analyses sur les tendances technologiques actuelles.">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .article-card {
+            transition: all 0.3s ease;
+            border-radius: 12px;
+        }
+
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+        }
+
+        .badge-theme {
+            font-size: 0.75rem;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+
+    <nav class="navbar navbar-dark bg-dark shadow-sm py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-arrow-left-circle-fill me-2 text-primary"></i> Retour au Portfolio
+            </a>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <div class="row mb-5 g-4 align-items-center">
+            <div class="col-lg-7">
+                <h1 class="fw-bold display-5 text-dark">Ma Veille Technologique</h1>
+                <p class="lead text-muted">Exploration active du No-Code, du DevOps et de l'écosystème Mobile.</p>
+            </div>
+            <div class="col-lg-5">
+                <div class="input-group input-group-lg shadow-sm">
+                    <span class="input-group-text bg-white border-end-0"><i
+                            class="bi bi-search text-primary"></i></span>
+                    <input type="text" id="searchInput" class="form-control border-start-0 ps-0"
+                        placeholder="Filtrer par mot-clé (ex: Flutter, Docker...)">
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4" id="veilleContainer">
+
+            <div class="col-md-6 col-lg-4 article-item" data-tags="no-code flutterflow bubble">
+                <div class="card h-100 border-0 shadow-sm article-card">
+                    <div class="card-body p-4">
+                        <span class="badge bg-info-subtle text-info mb-3 badge-theme text-uppercase">Low-Code /
+                            No-Code</span>
+                        <h5 class="fw-bold mb-3">L'avènement du No-Code en entreprise</h5>
+                        <p class="text-muted small">Analyse de l'accélération digitale grâce aux outils comme
+                            FlutterFlow et Bubble, permettant aux entreprises de réduire drastiquement leurs délais de
+                            mise en production.</p>
+                        <div class="mt-4 pt-3 border-top d-flex justify-content-between align-items-center">
+                            <span class="small text-muted"><i class="bi bi-calendar3 me-1"></i> Mars 2024</span>
+                            <a href="#" class="btn btn-sm btn-primary rounded-pill px-3">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 article-item" data-tags="devops docker kubernetes cicd">
+                <div class="card h-100 border-0 shadow-sm article-card">
+                    <div class="card-body p-4">
+                        <span class="badge bg-success-subtle text-success mb-3 badge-theme text-uppercase">DevOps</span>
+                        <h5 class="fw-bold mb-3">Automatisation et Conteneurisation</h5>
+                        <p class="text-muted small">Focus sur l'évolution de Docker et Kubernetes. Comment la culture
+                            DevOps transforme la collaboration entre développeurs et administrateurs système.</p>
+                        <div class="mt-4 pt-3 border-top d-flex justify-content-between align-items-center">
+                            <span class="small text-muted"><i class="bi bi-calendar3 me-1"></i> Février 2024</span>
+                            <a href="#" class="btn btn-sm btn-primary rounded-pill px-3">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 article-item" data-tags="mobile swift flutter cross-platform">
+                <div class="card h-100 border-0 shadow-sm article-card">
+                    <div class="card-body p-4">
+                        <span class="badge bg-warning-subtle text-warning mb-3 badge-theme text-uppercase">Développement
+                            Mobile</span>
+                        <h5 class="fw-bold mb-3">L'avenir du développement Cross-Platform</h5>
+                        <p class="text-muted small">Comparatif entre Flutter et React Native : vers une performance
+                            native sans le coût du développement spécifique à chaque OS.</p>
+                        <div class="mt-4 pt-3 border-top d-flex justify-content-between align-items-center">
+                            <span class="small text-muted"><i class="bi bi-calendar3 me-1"></i> Janvier 2024</span>
+                            <a href="#" class="btn btn-sm btn-primary rounded-pill px-3">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 article-item" data-tags="ia ai chatgpt copilot">
+                <div class="card h-100 border-0 shadow-sm article-card">
+                    <div class="card-body p-4">
+                        <span
+                            class="badge bg-secondary-subtle text-secondary mb-3 badge-theme text-uppercase">Intelligence
+                            Artificielle</span>
+                        <h5 class="fw-bold mb-3">IA et Automatisation du Code</h5>
+                        <p class="text-muted small">Étude de l'impact des outils comme GitHub Copilot sur la
+                            productivité des développeurs et les défis éthiques associés.</p>
+                        <div class="mt-4 pt-3 border-top d-flex justify-content-between align-items-center">
+                            <span class="small text-muted"><i class="bi bi-calendar3 me-1"></i> Janvier 2024</span>
+                            <a href="#" class="btn btn-sm btn-primary rounded-pill px-3">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-5 text-muted small">
+            <p>Veille pilotée manuellement via Google Alerts. <br> Filtrage dynamique codé en JavaScript.</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('searchInput').addEventListener('input', function () {
+            let filter = this.value.toLowerCase();
+            let items = document.querySelectorAll('.article-item');
+
+            items.forEach(item => {
+                let content = item.innerText.toLowerCase();
+                let tags = item.getAttribute('data-tags').toLowerCase();
+
+                if (content.includes(filter) || tags.includes(filter)) {
+                    item.style.display = "block";
+                    item.style.animation = "fadeIn 0.5s";
+                } else {
+                    item.style.display = "none";
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
