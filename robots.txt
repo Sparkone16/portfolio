@@ -1,21 +1,10 @@
-/* TEAM */
-    Chef de projet & Développeur: Léandro VEYRENC-CORDERO
-    Site web: https://cordero.fr
-    Société: Visuatek.fr
-    Contact: leandrocorderopro@gmail.com
-    LinkedIn: https://www.linkedin.com/in/leandro-cordero-b241312b4
-    Localisation: Metz/Sarre-Union, France
+# robots.txt pour https://cordero.fr
+User-agent: *
+Allow: /
 
-/* THANKS */
-    L'équipe de Profluens (Stages 2025-2026)
-    Mes professeurs de BTS SIO
+# On ne veut pas que les fichiers système soient indexés
+Disallow: /private/
+Disallow: /.git/
 
-/* SITE */
-    Dernière mise à jour: 2026/03/03
-    Standards: HTML5, CSS3, Bootstrap 5
-    Components: Lucide Icons, Google Fonts
-    Software: VS Code
-
-/* NOTE */
-    Étudiant en BTS SIO Option SLAM. 
-    Passionné par le DevOps et le Low-Code.
+# Indique où se trouve le plan du site pour Visuatek
+Sitemap: https://cordero.fr/sitemap.xml
