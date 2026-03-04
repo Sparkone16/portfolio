@@ -1,0 +1,249 @@
+@page {
+    size: A4;
+    margin: 0; /* On gère les marges directement dans le sélecteur cv */
+}
+/* Configuration Générale */
+cv {
+    display: block;
+    width: 210mm;
+    height: 297mm;
+    margin: 40px auto;
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    min-height: 1100px;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Barre Latérale (Aside) */
+aside {
+    display: block;
+    float: left;
+    width: 280px;
+    height: 100%;
+    background: #1a2a3a;
+    color: #ecf0f1;
+    min-height: 1100px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+photo {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 30px;
+    content: url('https://cordero.fr/assets/imgLeandro.jpg');
+    border-radius: 50%;
+    border: 5px solid #3498db;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+section_title {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #3498db;
+    border-bottom: 1px solid #34495e;
+    margin: 25px 0 15px;
+    padding-bottom: 5px;
+}
+
+item_info {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+
+domaine {
+    display: block;
+    margin-bottom: 15px;
+}
+
+nom_domaine {
+    display: block;
+    font-weight: bold;
+    color: #bdc3c7;
+    font-size: 12px;
+}
+
+liste_outils {
+    display: block;
+    font-size: 13px;
+    color: #ecf0f1;
+    margin-top: 5px;
+}
+
+loisir {
+    display: inline-block;
+    background: #2c3e50;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    margin: 3px;
+}
+
+/* Style pour la section Certifications */
+certifications {
+    display: block;
+    margin-top: 20px;
+}
+
+certification {
+    display: block;
+    font-size: 13px;
+    color: #ecf0f1;
+    margin-bottom: 12px;
+    padding-left: 25px;
+    position: relative;
+    line-height: 1.4;
+}
+
+/* Ajout d'une petite puce stylisée avant chaque certification */
+certification::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #3498db;
+    font-weight: bold;
+}
+
+
+/* Corps Principal (Main) */
+main {
+    margin-top: 5%;
+    display: block;
+    margin-left: 280px;
+    padding: 50px;
+    color: #2c3e50;
+}
+
+header {
+    display: block;
+    margin-bottom: 40px;
+}
+
+prenom { font-size: 38px; font-weight: 300; color: #1a2a3a; }
+nom { font-size: 38px; font-weight: 800; color: #3498db; text-transform: uppercase; }
+
+poste {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #7f8c8d;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+section_title_main {
+    display: block;
+    font-size: 20px;
+    font-weight: 800;
+    color: #1a2a3a;
+    border-left: 5px solid #3498db;
+    padding-left: 15px;
+    margin: 40px 0 20px;
+    text-transform: uppercase;
+}
+
+experience, formation {
+    display: block;
+    margin-bottom: 25px;
+}
+
+titre {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #3498db;
+}
+
+entreprise, etablissement {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #34495e;
+    margin: 3px 0;
+}
+
+periode, date {
+    display: block;
+    font-size: 12px;
+    color: #95a5a6;
+    font-style: italic;
+}
+
+item {
+    display: list-item;
+    margin-left: 20px;
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Cache le bouton lors de l'impression */
+@media print {
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+    }
+    bouton_pdf {
+        display: none !important;
+    }
+    
+    /* Force le fond (couleurs) à s'imprimer */
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+
+    /* Force le format A4 */
+    @page {
+        size: A4;
+        margin: 0;
+    }
+
+    /* Empêche le saut de page automatique à l'intérieur des blocs importants */
+    /* main, experience, formation, aside {
+        page-break-inside: avoid;
+        break-inside: avoid;
+    } */
+    experience, formation {
+        display: block;
+        margin-bottom: 15px;
+    }
+    main {
+        padding: 20px 30px; /* Au lieu de 50px */
+    }
+    
+    /* Force le CV à ne pas dépasser la hauteur d'une page */
+    cv {
+        overflow: hidden;
+        margin: 0 !important;
+        border: none !important;
+        height: 100vh; /* Utilise la hauteur de vue pour bloquer la page */
+        page-break-after: avoid;
+    }
+}
+
+/* Style du bouton à l'écran */
+bouton_pdf {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+bouton_pdf:hover {
+    background-color: #2980b9;
+}

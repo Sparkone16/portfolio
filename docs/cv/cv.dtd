@@ -1,0 +1,42 @@
+<!ELEMENT cv (entete, competences, formations, experiences, centres_interet)>
+<!ELEMENT entete (bouton_pdf?, nom, prenom, age, poste, contact, photo)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT prenom (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT poste (#PCDATA)>
+<!ELEMENT contact (email, telephone, adresse, liens)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT telephone (#PCDATA)>
+<!ELEMENT adresse (#PCDATA)>
+<!ELEMENT liens (linkedin?)>
+<!ELEMENT linkedin (#PCDATA)>
+<!ELEMENT photo (#PCDATA)>
+<!ELEMENT bouton_pdf (#PCDATA)>
+<!ATTLIST bouton_pdf onclick CDATA #IMPLIED>
+
+<!ELEMENT competences (domaine+)>
+<!ELEMENT domaine (nom_domaine, liste_outils)>
+<!ELEMENT nom_domaine (#PCDATA)>
+<!ELEMENT liste_outils (#PCDATA)>
+
+<!ELEMENT formations (formation+)>
+<!ELEMENT formation (date, diplome, etablissement, lieu)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT diplome (#PCDATA)>
+<!ELEMENT etablissement (#PCDATA)>
+<!ELEMENT lieu (#PCDATA)>
+
+<!ELEMENT experiences (experience+)>
+<!ELEMENT experience (periode, titre, entreprise, ville, description)>
+<!ELEMENT periode (#PCDATA)>
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT entreprise (#PCDATA)>
+<!ELEMENT ville (#PCDATA)>
+<!ELEMENT description (item+)>
+<!ELEMENT item (#PCDATA)>
+
+<!ELEMENT centres_interet (loisir+)>
+<!ELEMENT loisir (#PCDATA)>
+
+<!ELEMENT certifications (loisir+)>
+<!ELEMENT certification (#PCDATA)>

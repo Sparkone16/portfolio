@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<!DOCTYPE cv SYSTEM "cv.dtd">
+<cv xmlns:html="http://www.w3.org/1999/xhtml">
+    <aside>
+        <html:button style="all: unset; cursor: pointer;" onclick="window.print()">
+            <bouton_pdf>📄 Télécharger en PDF</bouton_pdf>
+        </html:button>
+        <photo>https://cordero.fr/assets/imgLeandro.jpg</photo>
+        
+        <section_title>Contact</section_title>
+        <contact>
+            <item_info class="email">leandrocorderopro@gmail.com</item_info>
+            <item_info class="phone">+33 6 50 52 04 74</item_info>
+            <item_info class="loc">Metz / Drulingen</item_info>
+            <item_info class="link">linkedin.com/in/leandro-cordero</item_info>
+        </contact>
+
+        <section_title>Compétences</section_title>
+        <competences>
+            <domaine>
+                <nom_domaine>Dev</nom_domaine>
+                <liste_outils>Dart, HTML/CSS, PHP 8, Symfony, Java, JS, Python, SQL, XML</liste_outils>
+            </domaine>
+            <domaine>
+                <nom_domaine>Infra</nom_domaine>
+                <liste_outils>Docker, API REST, PowerShell, Linux, Virtualisation</liste_outils>
+            </domaine>
+            <domaine>
+                <nom_domaine>Framework</nom_domaine>
+                <liste_outils>Symfony, Flutter, Express</liste_outils>
+            </domaine>
+            <domaine>
+                <nom_domaine>Outils</nom_domaine>
+                <liste_outils>Vs Code, Android Studio, Toolbox, WinSCP, OpenVPN</liste_outils>
+            </domaine>
+        </competences>
+
+        <section_title>Certifications</section_title>
+        <certifications>
+            <certification>Cisco Networking Academy : JavaScript Essentials 1</certification>
+            <certification>ANSSI : MOOC SecNum Académie</certification>
+        </certifications>
+
+        <section_title>Loisirs</section_title>
+        <centres_interet>
+            <loisir>Jeux Vidéo</loisir>
+            <loisir>Musique</loisir>
+            <loisir>Entreprenariat</loisir>
+        </centres_interet>
+    </aside>
+
+    <main>
+        <header>
+            <prenom>Léandro</prenom> <nom>VEYRENC-CORDERO</nom>
+            <poste>Étudiant Développeur</poste>
+        </header>
+
+        <section_title_main>Expériences Professionnelles</section_title_main>
+        <experiences>
+            <experience>
+                <periode>2026 (2 mois)</periode>
+                <titre>Stage Développeur QA / Tests</titre>
+                <entreprise>Profluens (Metz)</entreprise>
+                <description>
+                    <item>Automatisation de tests UI sur l'application Needle.social.</item>
+                    <item>Identification et correction de bugs via GitHub.</item>
+                </description>
+            </experience>
+            
+            <experience>
+                <periode>Octobre 2025 - Présent</periode>
+                <titre>Responsable Opérationnel</titre>
+                <entreprise>RM Sarre-Union - McDonald's (Sarre-Union)</entreprise>
+                <description>
+                    <item>Promotion interne : Management d'équipe et pilotage des flux.</item>
+                </description>
+            </experience>
+
+            <experience>
+                <periode>2025 (2 mois)</periode>
+                <titre>Stage Développeur Full-Stack</titre>
+                <entreprise>Profluens (Metz)</entreprise>
+                <description>
+                    <item>Développement d'une API REST avec Node.js. </item>
+                    <item>Conteneurisation de services via Docker. </item>
+                    <item>Creation d'un serveur SMTP </item>
+                </description>
+            </experience>
+            <experience>
+                <periode>Aout 2024 - Octobre 2025</periode>
+                <titre>Equipier polyvalent</titre>
+                <entreprise>RM Sarre-Union - McDonald's (Sarre-Union)</entreprise>
+                <description>
+                    <item>Travail en équipe</item>
+                    <item>Adaptabilité</item>
+                    <item>Autonomie</item>
+                    <item>Gestion du stress</item>
+                </description>
+            </experience>
+        </experiences>
+
+        <section_title_main>Cursus Scolaire</section_title_main>
+        <formations>
+            <formation>
+                <date>2024 - 2026</date>
+                <diplome>BTS SIO Option SLAM</diplome>
+                <etablissement>Lycée Robert Schuman, Metz</etablissement>
+            </formation>
+            <formation>
+                <date>2021 - 2024</date>
+                <diplome>Baccalauréat Général (SI &amp; Maths)</diplome>
+                <etablissement>Lycée G. Imbert, Sarre-Union</etablissement>
+            </formation>
+        </formations>
+    </main>
+</cv>
