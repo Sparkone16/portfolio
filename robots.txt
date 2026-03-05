@@ -1,10 +1,7 @@
-# robots.txt pour https://cordero.fr
 User-agent: *
 Allow: /
 
-# On ne veut pas que les fichiers système soient indexés
 Disallow: /private/
 Disallow: /.git/
 
-# Indique où se trouve le plan du site pour Visuatek
 Sitemap: https://cordero.fr/sitemap.xml
