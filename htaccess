@@ -1,5 +1,3 @@
-ErrorDocument 404 /404.html
-ErrorDocument 403 /404.html
 # Désactiver la navigation dans les dossiers
 Options -Indexes
 

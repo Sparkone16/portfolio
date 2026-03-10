@@ -32,7 +32,8 @@ photo {
     width: 150px;
     height: 150px;
     margin: 0 auto 30px;
-    content: url('https://cordero.fr/assets/imgLeandro.jpg');
+    background-image: url('https://cordero.fr/assets/imgLeandro.jpg');
+    background-size: cover;
     border-radius: 50%;
     border: 5px solid #3498db;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
@@ -226,14 +227,19 @@ item {
     cv {
         overflow: hidden;
         margin: 0 !important;
+        padding: 0 !important;
         border: none !important;
-        height: 100vh; /* Utilise la hauteur de vue pour bloquer la page */
+        height: 297mm; /* Utilise la hauteur de vue pour bloquer la page */
         page-break-after: avoid;
     }
 }
 
 /* Style du bouton à l'écran */
 bouton_pdf {
+    position: fixed;   /* Le bouton ne bouge pas quand on scrolle */
+    bottom: 20px;      /* Distance par rapport au bas de l'écran */
+    right: 20px;       /* Distance par rapport à la droite */
+    z-index: 9999;     /* S'assure qu'il passe au-dessus de tout le reste */
     display: inline-block;
     padding: 10px 20px;
     background-color: #3498db;

@@ -6,7 +6,7 @@
         <html:button style="all: unset; cursor: pointer;" onclick="window.print()">
             <bouton_pdf>📄 Télécharger en PDF</bouton_pdf>
         </html:button>
-        <photo>https://cordero.fr/assets/imgLeandro.jpg</photo>
+        <photo></photo>
         
         <section_title>Contact</section_title>
         <contact>
@@ -20,20 +20,24 @@
         <section_title>Compétences</section_title>
         <competences>
             <domaine>
-                <nom_domaine>Dev</nom_domaine>
-                <liste_outils>Dart, HTML/CSS, PHP 8, Symfony, Java, JS, Python, SQL, XML</liste_outils>
+                <nom_domaine>Applications</nom_domaine>
+                <liste_outils>Web, Cross-plateforme, API REST</liste_outils>
             </domaine>
             <domaine>
-                <nom_domaine>Infra</nom_domaine>
-                <liste_outils>Docker, API REST, PowerShell, Linux, Virtualisation</liste_outils>
+                <nom_domaine>Langages</nom_domaine>
+                <liste_outils>Dart, HTML/CSS, PHP, Java, JS, Python, SQL, XML</liste_outils>
             </domaine>
             <domaine>
-                <nom_domaine>Framework</nom_domaine>
-                <liste_outils>Symfony, Flutter, Express</liste_outils>
+                <nom_domaine>Infrastructures</nom_domaine>
+                <liste_outils>Docker, PowerShell, Virtualisation, Linux, Windows</liste_outils>
+            </domaine>
+            <domaine>
+                <nom_domaine>Frameworks &#38; SDK</nom_domaine>
+                <liste_outils>Symfony, Flutter, Express, PHPUnit, JUnit, Bootstrap</liste_outils>
             </domaine>
             <domaine>
                 <nom_domaine>Outils</nom_domaine>
-                <liste_outils>Vs Code, Android Studio, Toolbox, WinSCP, OpenVPN</liste_outils>
+                <liste_outils>Vs Code, Android Studio, Toolbox, WinSCP, OpenVPN, Git, GitHub, Trello, Wordpress, Google Search Console</liste_outils>
             </domaine>
         </competences>
 
@@ -60,7 +64,7 @@
         <section_title_main>Expériences Professionnelles</section_title_main>
         <experiences>
             <experience>
-                <periode>2026 (2 mois)</periode>
+                <periode>2026 (1 mois)</periode>
                 <titre>Stage Développeur QA / Tests</titre>
                 <entreprise>Profluens (Metz)</entreprise>
                 <description>
@@ -79,7 +83,7 @@
             </experience>
 
             <experience>
-                <periode>2025 (2 mois)</periode>
+                <periode>2025 (1 mois)</periode>
                 <titre>Stage Développeur Full-Stack</titre>
                 <entreprise>Profluens (Metz)</entreprise>
                 <description>
