@@ -1,5 +1,3 @@
-ErrorDocument 404 /404.html
-ErrorDocument 403 /404.html
 # Désactiver la navigation dans les dossiers
 Options -Indexes
 
@@ -19,8 +17,8 @@ RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
 
 # 3. Gestion des erreurs personnalisée
-# Redirige vers ton portfolio si une page n'existe pas
-ErrorDocument 404 /index.html
+ErrorDocument 404 /404.html
+ErrorDocument 403 /404.html
 
 # 4. Cache des fichiers pour la performance (Vitesse de chargement)
 <IfModule mod_expires.c>
